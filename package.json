@@ -1,0 +1,26 @@
+{
+  "name": "rjsf-material-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frassinier/rjsf-material-design.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/frassinier/rjsf-material-design/issues"
+  },
+  "homepage": "https://github.com/frassinier/rjsf-material-design#readme",
+  "peerDependencies": {
+    "react": "^15.3.2",
+    "react-jsonschema-form": "^0.40.0"
+  },
+  "dependencies": {
+    "material-ui": "^0.16.1"
+  }
+}

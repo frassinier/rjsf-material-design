@@ -1,43 +1,38 @@
-import MaterialDesignCheckboxWidget from "./widgets/CheckboxWidget";
-import MaterialDesignRadioWidget from "./widgets/RadioWidget";
-import MaterialDesignSelectWidget from "./widgets/SelectWidget";
-import MaterialDesignTextWidget from "./widgets/TextWidget";
-import MaterialDesignTextareaWidget from "./widgets/TextareaWidget";
+import React from 'react';
 
-const materialDesignWidgetMapping = {
-	boolean: {
-		default: MaterialDesignCheckboxWidget,
-		alternatives: {
-			radio: MaterialDesignRadioWidget,
-			select: MaterialDesignSelectWidget,
-		}
-	},
-	number: {
-		default: MaterialDesignTextWidget,
-		alternatives: {
-			radio: MaterialDesignRadioWidget,
-		}
-	},
-	integer: {
-		default: MaterialDesignTextWidget,
-		alternatives: {
-			radio: MaterialDesignRadioWidget,
-		}
-	},
-	string: {
-		default: MaterialDesignTextWidget,
-		alternatives: {
-			textarea: MaterialDesignTextareaWidget,
-			select: MaterialDesignSelectWidget,
-			radio: MaterialDesignRadioWidget,
-		},
-	},
-	array: {
-		default: MaterialDesignSelectWidget,
-		alternatives: {
-			checkboxes: MaterialDesignCheckboxWidget
-		},
-	}
+import Form from 'react-jsonschema-form';
+
+import MaterialDesignFieldTemplate from './templates/FieldTemplate';
+import MaterialDesignCheckboxWidget from './widgets/CheckboxWidget';
+import MaterialDesignColorWidget from './widgets/ColorWidget';
+import MaterialDesignEmailWidget from './widgets/EmailWidget';
+import MaterialDesignPasswordWidget from './widgets/PasswordWidget';
+import MaterialDesignRadioWidget from './widgets/RadioWidget';
+import MaterialDesignSelectWidget from './widgets/SelectWidget';
+import MaterialDesignTextareaWidget from './widgets/TextareaWidget';
+import MaterialDesignTextWidget from './widgets/TextWidget';
+import MaterialDesignURLWidget from './widgets/URLWidget';
+
+const materialDesignTheme = {
+    widgets: {
+        CheckboxWidget: MaterialDesignCheckboxWidget,
+        ColorWidget: MaterialDesignColorWidget,
+        EmailWidget: MaterialDesignEmailWidget,
+        PasswordWidget: MaterialDesignPasswordWidget,
+        RadioWidget: MaterialDesignRadioWidget,
+        SelectWidget: MaterialDesignSelectWidget,
+        TextareaWidget: MaterialDesignTextareaWidget,
+        TextWidget: MaterialDesignTextWidget,
+        URLWidget: MaterialDesignURLWidget
+    },
+    FieldTemplate: MaterialDesignFieldTemplate,
 };
 
-export default materialDesignWidgetMapping;
+const MaterialDesignForm = (props) => (
+    <Form
+        {...materialDesignTheme}
+        {...props}
+    />
+);
+
+export default MaterialDesignForm;

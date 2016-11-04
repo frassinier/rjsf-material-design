@@ -11,6 +11,7 @@ import MaterialDesignRadioWidget from './widgets/RadioWidget';
 import MaterialDesignSelectWidget from './widgets/SelectWidget';
 import MaterialDesignTextareaWidget from './widgets/TextareaWidget';
 import MaterialDesignTextWidget from './widgets/TextWidget';
+import MaterialDesignUpDownWidget from './widgets/UpDownWidget';
 import MaterialDesignURLWidget from './widgets/URLWidget';
 
 const materialDesignTheme = {
@@ -23,6 +24,7 @@ const materialDesignTheme = {
         SelectWidget: MaterialDesignSelectWidget,
         TextareaWidget: MaterialDesignTextareaWidget,
         TextWidget: MaterialDesignTextWidget,
+        UpDownWidget: MaterialDesignUpDownWidget,
         URLWidget: MaterialDesignURLWidget
     },
     FieldTemplate: MaterialDesignFieldTemplate,

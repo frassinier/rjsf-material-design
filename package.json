@@ -2,8 +2,9 @@
   "name": "rjsf-material-design",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "prepublish": "babel -d lib ./src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,13 @@
   },
   "dependencies": {
     "material-ui": "^0.16.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-plugin-transform-class-properties": "^6.18.0",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0"
   }
 }

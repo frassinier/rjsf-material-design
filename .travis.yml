@@ -8,6 +8,7 @@ node_js:
   - '4'
   - '6'
 before_script:
+  - npm i -g rimraf
   - npm prune
   - npm update
 after_success:

@@ -6,7 +6,7 @@ if [ -n "$GITHUB_API_KEY" ]; then
         echo "Build branch master"
         git clone https://github.com/olzraiti/react-jsonschema-form.git .tmp
         cd .tmp
-        git checkout olzraiti/overrideRegistry
+        git checkout overrideRegistry
         npm run dist
         npm link
         cd "$TRAVIS_BUILD_DIR"

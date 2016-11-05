@@ -7,6 +7,7 @@ if [ -n "$GITHUB_API_KEY" ]; then
         git clone https://github.com/olzraiti/react-jsonschema-form.git .tmp
         cd .tmp
         git checkout overrideRegistry
+        npm i
         npm run dist
         npm link
         cd "$TRAVIS_BUILD_DIR"

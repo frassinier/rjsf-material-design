@@ -8,6 +8,7 @@ import MaterialDesignColorWidget from './widgets/ColorWidget';
 import MaterialDesignEmailWidget from './widgets/EmailWidget';
 import MaterialDesignPasswordWidget from './widgets/PasswordWidget';
 import MaterialDesignRadioWidget from './widgets/RadioWidget';
+import MaterialDesignRangeWidget from './widgets/RangeWidget';
 import MaterialDesignSelectWidget from './widgets/SelectWidget';
 import MaterialDesignTextareaWidget from './widgets/TextareaWidget';
 import MaterialDesignTextWidget from './widgets/TextWidget';
@@ -21,6 +22,7 @@ const materialDesignTheme = {
         EmailWidget: MaterialDesignEmailWidget,
         PasswordWidget: MaterialDesignPasswordWidget,
         RadioWidget: MaterialDesignRadioWidget,
+        RangeWidget: MaterialDesignRangeWidget,
         SelectWidget: MaterialDesignSelectWidget,
         TextareaWidget: MaterialDesignTextareaWidget,
         TextWidget: MaterialDesignTextWidget,

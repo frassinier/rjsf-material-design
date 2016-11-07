@@ -21,7 +21,7 @@ function BaseInput(props) {
             readOnly={readonly}
             autoFocus={autofocus}
             value={typeof value === "undefined" ? "" : value}
-            onChange={(event, value) => onChange(event, value)}
+            onChange={(event, value) => onChange(value)}
         />
     );
 }

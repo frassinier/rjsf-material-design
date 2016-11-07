@@ -43,8 +43,8 @@ function SelectWidget({
 			disabled={disabled}
 			readOnly={readonly}
 			autoFocus={autofocus}
-			onChange={(event, value) => {
-				onChange(processValue(schema, value));
+			onChange={(event, key, value) => {
+				onChange(processValue(schema, key));
 			}}>{
 			enumOptions.map(({ value, label }, i) => {
 				return <MenuItem key={i} value={value} primaryText={label}/>;

@@ -17,10 +17,10 @@ function TextareaWidget({
     return (
         <BaseInput
             id={id}
-            value={typeof value === 'undefined' ? '' : value}
-            floatingLabelText={label}
-            placeholder={placeholder}
             multiLine={true}
+            label={label}
+            value={typeof value === 'undefined' ? '' : value}
+            placeholder={placeholder}
             required={required}
             disabled={disabled}
             readonly={readonly}

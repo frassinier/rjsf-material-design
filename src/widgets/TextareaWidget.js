@@ -20,12 +20,13 @@ function TextareaWidget({
             value={typeof value === 'undefined' ? '' : value}
             floatingLabelText={label}
             placeholder={placeholder}
-            multiLine
+            multiLine={true}
             required={required}
             disabled={disabled}
-            readOnly={readonly}
-            autoFocus={autofocus}
-            onChange={(event) => onChange(event.target.value)}/>
+            readonly={readonly}
+            autofocus={autofocus}
+            onChange={onChange}
+        />
     );
 }
 

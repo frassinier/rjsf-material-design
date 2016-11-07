@@ -10,6 +10,8 @@ function BaseInput(props) {
 		value,
 		required,
 		disabled,
+		readonly,
+		autofocus,
 		onChange,
 		label,
 	} = props;

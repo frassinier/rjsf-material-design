@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import Checkbox from "material-ui/Checkbox";
+import Checkbox from 'material-ui/Checkbox';
 
 function CheckboxWidget({
 	id,

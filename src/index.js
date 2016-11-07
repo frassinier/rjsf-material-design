@@ -6,6 +6,8 @@ import MaterialDesignFieldTemplate from './templates/FieldTemplate';
 import MaterialDesignCheckboxesWidget from './widgets/CheckboxesWidget';
 import MaterialDesignCheckboxWidget from './widgets/CheckboxWidget';
 import MaterialDesignColorWidget from './widgets/ColorWidget';
+import MaterialDesignDateTimeWidget from './widgets/DateTimeWidget';
+import MaterialDesignDateWidget from './widgets/DateWidget';
 import MaterialDesignEmailWidget from './widgets/EmailWidget';
 import MaterialDesignPasswordWidget from './widgets/PasswordWidget';
 import MaterialDesignRadioWidget from './widgets/RadioWidget';
@@ -20,7 +22,9 @@ const materialDesignTheme = {
     widgets: {
 	    CheckboxesWidget: MaterialDesignCheckboxesWidget,
         CheckboxWidget: MaterialDesignCheckboxWidget,
-        ColorWidget: MaterialDesignColorWidget,
+	    ColorWidget: MaterialDesignColorWidget,
+	    DateTimeWidget: MaterialDesignDateTimeWidget,
+	    DateWidget: MaterialDesignDateWidget,
         EmailWidget: MaterialDesignEmailWidget,
         PasswordWidget: MaterialDesignPasswordWidget,
         RadioWidget: MaterialDesignRadioWidget,
@@ -36,8 +40,8 @@ const materialDesignTheme = {
 
 const MaterialDesignForm = (props) => {
 	const onSubmitHandler = (...args) => {
-		console.debug('submit', args.formData);
-		return props.onSubmit(args)
+		console.debug('submit', args[0] && args[0].formData);
+		return props.onSubmit && props.onSubmit(...args);
 	};
 	return (
 		<Form

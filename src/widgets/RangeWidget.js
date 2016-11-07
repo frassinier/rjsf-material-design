@@ -4,7 +4,6 @@ import Slider from 'material-ui/Slider';
 import {rangeSpec} from 'react-jsonschema-form/lib/utils';
 
 function RangeWidget(props) {
-  console.log(props);
   const {
       schema,
       id,

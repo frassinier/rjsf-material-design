@@ -19,6 +19,15 @@ import MaterialDesignToggletWidget from './widgets/ToggleWidget';
 import MaterialDesignUpDownWidget from './widgets/UpDownWidget';
 import MaterialDesignURLWidget from './widgets/URLWidget';
 
+const customWidgets = {
+	toggle: MaterialDesignToggletWidget,
+};
+
+const customUiSchema = {
+	'ui:widget': 'toggle',
+};
+
+
 const materialDesignTheme = {
     widgets: {
 	    CheckboxesWidget: MaterialDesignCheckboxesWidget,
@@ -33,9 +42,9 @@ const materialDesignTheme = {
         SelectWidget: MaterialDesignSelectWidget,
         TextareaWidget: MaterialDesignTextareaWidget,
 	    TextWidget: MaterialDesignTextWidget,
-	    ToggleWidget: MaterialDesignToggletWidget,
         UpDownWidget: MaterialDesignUpDownWidget,
-        URLWidget: MaterialDesignURLWidget
+        URLWidget: MaterialDesignURLWidget,
+	    ...customWidgets
     },
     FieldTemplate: MaterialDesignFieldTemplate,
 };
@@ -47,6 +56,10 @@ const MaterialDesignForm = (props) => {
 	};
 	return (
 		<Form
+			uiSchema={{
+				...customUiSchema,
+				...props.uiSchema
+			}}
 			{...materialDesignTheme}
 			{...props}
 			onSubmit={onSubmitHandler}

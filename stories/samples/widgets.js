@@ -31,6 +31,10 @@ module.exports = {
                         type: "boolean",
                         title: "radio buttons"
                     },
+	                toggle: {
+		                type: "boolean",
+		                title: "toggle button"
+	                },
                     select: {
                         type: "boolean",
                         title: "select box"
@@ -88,6 +92,9 @@ module.exports = {
             radio: {
                 "ui:widget": "radio"
             },
+	        toggle: {
+		        "ui:widget": "toggle"
+	        },
             select: {
                 "ui:widget": "select"
             }

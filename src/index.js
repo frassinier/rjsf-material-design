@@ -15,6 +15,7 @@ import MaterialDesignRangeWidget from './widgets/RangeWidget';
 import MaterialDesignSelectWidget from './widgets/SelectWidget';
 import MaterialDesignTextareaWidget from './widgets/TextareaWidget';
 import MaterialDesignTextWidget from './widgets/TextWidget';
+import MaterialDesignToggletWidget from './widgets/ToggleWidget';
 import MaterialDesignUpDownWidget from './widgets/UpDownWidget';
 import MaterialDesignURLWidget from './widgets/URLWidget';
 
@@ -31,7 +32,8 @@ const materialDesignTheme = {
         RangeWidget: MaterialDesignRangeWidget,
         SelectWidget: MaterialDesignSelectWidget,
         TextareaWidget: MaterialDesignTextareaWidget,
-        TextWidget: MaterialDesignTextWidget,
+	    TextWidget: MaterialDesignTextWidget,
+	    ToggleWidget: MaterialDesignToggletWidget,
         UpDownWidget: MaterialDesignUpDownWidget,
         URLWidget: MaterialDesignURLWidget
     },

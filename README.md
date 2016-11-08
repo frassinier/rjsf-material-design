@@ -8,6 +8,13 @@ Material-UI widget set on top of react-jsonschema-form (RJSF).
 * [Radio](#radio)
 * [Toggle](#toggle)
 * [Text Field](#textfield)
+  * [Default](#default)
+  * [Number](#number)
+  * [Color](#color)
+  * [Email](#email)
+  * [Password](#password)
+  * [URL](#url)
+  * [Textarea](#textarea)
 * [Select Field](#selectfield)
 
 ### Checkbox
@@ -98,7 +105,7 @@ Widget is `<input type=["number"]>`
 
 #### Color
 
-Default widget is `<input type=["color"]>`
+Widget is `<input type=["color"]>`
 
 ```json
 {
@@ -118,7 +125,7 @@ Default widget is `<input type=["color"]>`
 
 #### Email
 
-Default widget is `<input type=["email"]>`
+Widget is `<input type=["email"]>`
 
 ```json
 {

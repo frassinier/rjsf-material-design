@@ -1,6 +1,10 @@
 import React, { PropTypes } from "react";
+
 import SelectField from "material-ui/SelectField";
 import MenuItem from "material-ui/MenuItem";
+
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
 
 import { asNumber } from 'react-jsonschema-form/lib/utils';
 
@@ -33,6 +37,7 @@ function SelectWidget({
 	onChange
 }) {
 	const { enumOptions } = options;
+
 	return (
 		<SelectField
 			id={id}
@@ -44,7 +49,7 @@ function SelectWidget({
 			readOnly={readonly}
 			autoFocus={autofocus}
 			onChange={(event, key, value) => {
-				onChange(processValue(schema, key));
+				onChange(processValue(schema, value));
 			}}>{
 			enumOptions.map(({ value, label }, i) => {
 				return <MenuItem key={i} value={value} primaryText={label}/>;

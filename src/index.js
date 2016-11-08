@@ -27,26 +27,25 @@ const customUiSchema = {
 	'ui:widget': 'toggle',
 };
 
-
 const materialDesignTheme = {
-    widgets: {
-	    CheckboxesWidget: MaterialDesignCheckboxesWidget,
-        CheckboxWidget: MaterialDesignCheckboxWidget,
-	    ColorWidget: MaterialDesignColorWidget,
-	    DateTimeWidget: MaterialDesignDateTimeWidget,
-	    DateWidget: MaterialDesignDateWidget,
-        EmailWidget: MaterialDesignEmailWidget,
-        PasswordWidget: MaterialDesignPasswordWidget,
-        RadioWidget: MaterialDesignRadioWidget,
-        RangeWidget: MaterialDesignRangeWidget,
-        SelectWidget: MaterialDesignSelectWidget,
-        TextareaWidget: MaterialDesignTextareaWidget,
-	    TextWidget: MaterialDesignTextWidget,
-        UpDownWidget: MaterialDesignUpDownWidget,
-        URLWidget: MaterialDesignURLWidget,
-	    ...customWidgets
-    },
-    FieldTemplate: MaterialDesignFieldTemplate,
+	widgets: {
+		CheckboxesWidget: MaterialDesignCheckboxesWidget,
+		CheckboxWidget: MaterialDesignCheckboxWidget,
+		ColorWidget: MaterialDesignColorWidget,
+		DateTimeWidget: MaterialDesignDateTimeWidget,
+		DateWidget: MaterialDesignDateWidget,
+		EmailWidget: MaterialDesignEmailWidget,
+		PasswordWidget: MaterialDesignPasswordWidget,
+		RadioWidget: MaterialDesignRadioWidget,
+		RangeWidget: MaterialDesignRangeWidget,
+		SelectWidget: MaterialDesignSelectWidget,
+		TextareaWidget: MaterialDesignTextareaWidget,
+		TextWidget: MaterialDesignTextWidget,
+		UpDownWidget: MaterialDesignUpDownWidget,
+		URLWidget: MaterialDesignURLWidget,
+		...customWidgets
+	},
+	FieldTemplate: MaterialDesignFieldTemplate,
 };
 
 const MaterialDesignForm = (props) => {

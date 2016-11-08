@@ -19,6 +19,8 @@ Material-UI widget set on top of react-jsonschema-form (RJSF).
 
 ### Checkbox
 
+Checkboxes are supported for `boolean` and `array` types.
+
 ```json
 {
     "schema": {

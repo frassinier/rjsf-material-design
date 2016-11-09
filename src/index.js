@@ -3,6 +3,7 @@ import React from 'react';
 import Form from 'react-jsonschema-form';
 
 import MaterialDesignFieldTemplate from './templates/FieldTemplate';
+
 import MaterialDesignCheckboxesWidget from './widgets/CheckboxesWidget';
 import MaterialDesignCheckboxWidget from './widgets/CheckboxWidget';
 import MaterialDesignColorWidget from './widgets/ColorWidget';
@@ -53,14 +54,27 @@ const MaterialDesignForm = (props) => {
 		console.debug('submit', args[0] && args[0].formData);
 		return props.onSubmit && props.onSubmit(...args);
 	};
+
+	const finalWidgets = {
+		...materialDesignTheme.widgets,
+		...props.widgets
+	};
+
+	const customFieldTemplate = {
+		...materialDesignTheme.FieldTemplate,
+		...props.FieldTemplate
+	};
+
+	const finalUiSchema = {
+		...customUiSchema,
+		...props.uiSchema
+	};
+
 	return (
 		<Form
-			uiSchema={{
-				...customUiSchema,
-				...props.uiSchema
-			}}
-			{...materialDesignTheme}
 			{...props}
+			uiSchema={finalUiSchema}
+			widgets={finalWidgets}
 			onSubmit={onSubmitHandler}
 		/>
 	);

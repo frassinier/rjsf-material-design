@@ -26,8 +26,8 @@ function BaseInput(props) {
 			placeholder={placeholder}
 			required={required}
 			disabled={disabled}
-            readonly={readonly}
-            autofocus={autofocus}
+            readOnly={readonly}
+            autoFocus={autofocus}
 			onChange={(event, value) => onChange(value)}
 		/>
 	);

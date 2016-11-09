@@ -2,7 +2,6 @@ import React from 'react';
 
 import { storiesOf, action } from '@kadira/storybook';
 
-// import {muiTheme} from 'storybook-addon-material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Form from './../src/index';

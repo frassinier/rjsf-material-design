@@ -22,7 +22,7 @@
   "homepage": "https://github.com/frassinier/rjsf-material-design#readme",
   "peerDependencies": {
     "react": "^15.3.2",
-    "react-jsonschema-form": "^0.40.0"
+    "react-jsonschema-form": "^0.41.0"
   },
   "dependencies": {
     "eslint": "^3.9.1",

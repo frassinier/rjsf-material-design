@@ -60,10 +60,7 @@ const MaterialDesignForm = (props) => {
 		...props.widgets
 	};
 
-	const customFieldTemplate = {
-		...materialDesignTheme.FieldTemplate,
-		...props.FieldTemplate
-	};
+	const { FieldTemplate } = materialDesignTheme;
 
 	const finalUiSchema = {
 		...customUiSchema,
@@ -75,6 +72,7 @@ const MaterialDesignForm = (props) => {
 			{...props}
 			uiSchema={finalUiSchema}
 			widgets={finalWidgets}
+			FieldTemplate={FieldTemplate}
 			onSubmit={onSubmitHandler}
 		/>
 	);

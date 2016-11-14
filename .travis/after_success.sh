@@ -3,6 +3,9 @@
 if [ -n "$GITHUB_API_KEY" ]; then
     cd "$TRAVIS_BUILD_DIR"
     if [ "$TRAVIS_PULL_REQUEST" == false ] && [ "$TRAVIS_BRANCH" == 'master' ]; then
+        echo "Build branch master"
+        npm run semantic-release
+        echo "✓ Run NPM semantic-release script"
         # This generates a `docs` directory containing demo and sassdoc
         npm run build-storybook
         echo "✓ Create storybook-static directory"

@@ -3,17 +3,7 @@
 if [ -n "$GITHUB_API_KEY" ]; then
     cd "$TRAVIS_BUILD_DIR"
     if [ "$TRAVIS_PULL_REQUEST" == false ] && [ "$TRAVIS_BRANCH" == 'master' ]; then
-        echo "Build branch master"
-        git clone https://github.com/olzraiti/react-jsonschema-form.git .tmp
-        cd .tmp
-        git checkout overrideRegistry
-        npm i
-        npm run dist
-        npm link
-        cd "$TRAVIS_BUILD_DIR"
-        echo "✓ Checkout and build fork"
         # This generates a `docs` directory containing demo and sassdoc
-        npm link react-jsonschema-form
         npm run build-storybook
         echo "✓ Create storybook-static directory"
         # Publish on gh-pages

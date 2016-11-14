@@ -1,18 +1,18 @@
 {
   "name": "rjsf-material-design",
-  "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "babel -d lib ./src/",
     "start": "npm run storybook",
     "test": "echo \"no test yet\"",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -p 6007",
+    "build-storybook": "build-storybook",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frassinier/rjsf-material-design.git"
+    "url": "https://github.com/frassinier/rjsf-material-design.git"
   },
   "author": "",
   "license": "Apache-2.0",
@@ -41,6 +41,7 @@
     "react-dom": "^15.3.2",
     "react-jsonschema-form": "^0.41.1",
     "react-tap-event-plugin": "^1.0.0",
-    "storybook-addon-material-ui": "^0.7.3"
+    "storybook-addon-material-ui": "^0.7.3",
+    "semantic-release": "^4.3.5"
   }
 }

@@ -51,7 +51,7 @@ const materialDesignTheme = {
 
 const MaterialDesignForm = (props) => {
 	const onSubmitHandler = (...args) => {
-		console.debug('submit', args[0] && args[0].formData);
+		// console.debug('submit', args[0] && args[0].formData);
 		return props.onSubmit && props.onSubmit(...args);
 	};
 
